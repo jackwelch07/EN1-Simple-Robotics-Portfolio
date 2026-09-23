@@ -106,11 +106,13 @@ body {
 
 .proj-page-video {
     display: block;
-    width: 100%;
+    width: min(100%, 680px);
     max-width: 100%;
-    max-height: 330px;
+    max-height: 360px;
+    height: auto;
     object-fit: contain;
     background: black;
+    margin: 0 auto;
 }
 
 .coaster-page-image {
@@ -192,11 +194,12 @@ pre code, pre code {
 /* pixel height on the iframe itself.                                  */
 .proj-video-container {
     position: relative;
-    width: 100%;
+    width: min(100%, 700px);
+    margin: 20px auto;
     padding-top: 56.25%;
-    margin: 20px 0;
     border-radius: var(--radius);
     overflow: hidden;
+    background: black;
 }
 
 .proj-video-container iframe {
