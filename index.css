@@ -198,6 +198,10 @@ body {
     border-radius: 8px;
 }
 
+.top-spinner-card-image {
+    object-fit: contain;
+}
+
 .project-card:first-child .project-art {
     height: 190px;
     min-height: 190px;

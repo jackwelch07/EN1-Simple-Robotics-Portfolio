@@ -176,16 +176,20 @@ pre code, pre code {
 /* Optional block: a photo gallery grid. Use for pages with several  */
 /* work-in-progress or detail photos beyond the one hero image.       */
 .proj-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
     margin: 20px 0;
 }
 
 .proj-gallery img {
+    display: block;
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    max-width: 320px;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
     border-radius: var(--radius);
 }
 
@@ -249,7 +253,4 @@ pre code, pre code {
         font-size: 1.3em;
     }
 
-    .proj-gallery img {
-        height: 120px;
-    }
 }
